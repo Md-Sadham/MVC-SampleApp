@@ -47,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397F287C213F93B700210441 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8598DB3A2095DD990055CB8D /* Main.storyboard */,
+				8598DB3F2095DD9A0055CB8D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		397F287D213F93D500210441 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8598DB3D2095DD9A0055CB8D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8598DB2A2095DD990055CB8D = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +83,13 @@
 		8598DB352095DD990055CB8D /* MVCSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				8598DB4A2095DEAD0055CB8D /* Utilities */,
-				8598DB492095DE820055CB8D /* Controllers */,
-				8598DB482095DE700055CB8D /* Models */,
-				8598DB362095DD990055CB8D /* AppDelegate.swift */,
-				8598DB382095DD990055CB8D /* ViewController.swift */,
-				8598DB3A2095DD990055CB8D /* Main.storyboard */,
-				8598DB3D2095DD9A0055CB8D /* Assets.xcassets */,
-				8598DB3F2095DD9A0055CB8D /* LaunchScreen.storyboard */,
 				8598DB422095DD9A0055CB8D /* Info.plist */,
+				8598DB362095DD990055CB8D /* AppDelegate.swift */,
+				8598DB482095DE700055CB8D /* Models */,
+				397F287C213F93B700210441 /* Views */,
+				8598DB492095DE820055CB8D /* Controllers */,
+				8598DB4A2095DEAD0055CB8D /* Utilities */,
+				397F287D213F93D500210441 /* Resources */,
 			);
 			path = MVCSampleApp;
 			sourceTree = "<group>";
@@ -90,6 +105,7 @@
 		8598DB492095DE820055CB8D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8598DB382095DD990055CB8D /* ViewController.swift */,
 				8598DB542095E9050055CB8D /* Network Manager */,
 			);
 			path = Controllers;
@@ -337,7 +353,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WR82MQC7L3;
 				INFOPLIST_FILE = MVCSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HMD.MVCSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,7 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WR82MQC7L3;
 				INFOPLIST_FILE = MVCSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HMD.MVCSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
